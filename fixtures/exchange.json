@@ -1,0 +1,291 @@
+{
+  "works": [
+    {
+      "id": "W-10",
+      "owners": [
+        "S1",
+        "S2"
+      ],
+      "editor": "ED"
+    },
+    {
+      "id": "W-20",
+      "owners": [
+        "S3",
+        "S2"
+      ],
+      "editor": "ED"
+    },
+    {
+      "id": "W-30",
+      "owners": [
+        "S4"
+      ],
+      "editor": "ED"
+    }
+  ],
+  "pieces": [
+    {
+      "id": "F-1",
+      "kind": "晶相图",
+      "owners": [
+        "S2"
+      ]
+    },
+    {
+      "id": "F-2",
+      "kind": "断面图",
+      "owners": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "F-3",
+      "kind": "模拟曲线",
+      "owners": [
+        "S3"
+      ]
+    },
+    {
+      "id": "F-4",
+      "kind": "性能台账",
+      "owners": [
+        "S4"
+      ]
+    }
+  ],
+  "manuscripts": [
+    {
+      "id": "M-10A",
+      "paper": "W-10",
+      "version": 1,
+      "abstract_refs": [
+        "F-1"
+      ],
+      "extras": [
+        "F-2"
+      ]
+    },
+    {
+      "id": "M-10B",
+      "paper": "W-10",
+      "version": 2,
+      "abstract_refs": [],
+      "extras": []
+    },
+    {
+      "id": "M-20A",
+      "paper": "W-20",
+      "version": 1,
+      "abstract_refs": [
+        "F-3"
+      ],
+      "extras": [
+        "F-1"
+      ]
+    },
+    {
+      "id": "M-20B",
+      "paper": "W-20",
+      "version": 2,
+      "abstract_refs": [
+        "F-3"
+      ],
+      "extras": []
+    },
+    {
+      "id": "M-30A",
+      "paper": "W-30",
+      "version": 1,
+      "abstract_refs": [],
+      "extras": [
+        "F-4"
+      ]
+    }
+  ],
+  "consents": [
+    {
+      "id": "S-1A",
+      "version": "M-10A",
+      "actor": "S1",
+      "scope": [
+        "abstract",
+        "F-2"
+      ],
+      "signed": "2027-01-18T08:10:00+08:00"
+    },
+    {
+      "id": "S-2A",
+      "version": "M-10A",
+      "actor": "S2",
+      "scope": [
+        "abstract",
+        "F-1",
+        "F-2"
+      ],
+      "signed": "2027-01-18T08:12:00+08:00"
+    },
+    {
+      "id": "S-1B",
+      "version": "M-10B",
+      "actor": "S1",
+      "scope": [
+        "abstract"
+      ],
+      "signed": "2027-01-18T08:20:00+08:00"
+    },
+    {
+      "id": "S-2B",
+      "version": "M-10B",
+      "actor": "S2",
+      "scope": [
+        "abstract"
+      ],
+      "signed": "2027-01-18T08:20:00+08:00"
+    },
+    {
+      "id": "S-3A",
+      "version": "M-20A",
+      "actor": "S3",
+      "scope": [
+        "abstract",
+        "F-3"
+      ],
+      "signed": "2027-01-18T08:25:00+08:00"
+    },
+    {
+      "id": "S-2C",
+      "version": "M-20A",
+      "actor": "S2",
+      "scope": [
+        "abstract",
+        "F-1"
+      ],
+      "signed": "2027-01-18T08:25:00+08:00"
+    },
+    {
+      "id": "S-3B",
+      "version": "M-20B",
+      "actor": "S3",
+      "scope": [
+        "abstract",
+        "F-3"
+      ],
+      "signed": "2027-01-18T08:30:00+08:00"
+    },
+    {
+      "id": "S-2D",
+      "version": "M-20B",
+      "actor": "S2",
+      "scope": [
+        "abstract"
+      ],
+      "signed": "2027-01-18T08:30:00+08:00"
+    },
+    {
+      "id": "S-4",
+      "version": "M-30A",
+      "actor": "S4",
+      "scope": [
+        "abstract",
+        "F-4"
+      ],
+      "signed": "2027-01-18T08:35:00+08:00"
+    }
+  ],
+  "embargo": [
+    {
+      "id": "E-1",
+      "content": "F-1",
+      "earliest": "2027-01-18T11:00:00+08:00",
+      "received": "2027-01-18T08:00:00+08:00"
+    },
+    {
+      "id": "E-2",
+      "content": "F-2",
+      "earliest": "2027-01-18T10:50:00+08:00",
+      "received": "2027-01-18T08:00:00+08:00"
+    },
+    {
+      "id": "E-3",
+      "content": "F-1",
+      "earliest": "2027-01-18T16:00:00+08:00",
+      "received": "2027-01-18T10:55:00+08:00"
+    },
+    {
+      "id": "E-4",
+      "content": "F-4",
+      "earliest": "2027-01-18T12:00:00+08:00",
+      "received": "2027-01-18T08:00:00+08:00"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "G-1",
+      "grouped": true,
+      "publish": "2027-01-18T11:00:00+08:00",
+      "candidates": [
+        [
+          "M-10A",
+          "M-10B"
+        ],
+        [
+          "M-20A",
+          "M-20B"
+        ]
+      ]
+    },
+    {
+      "id": "G-2",
+      "grouped": false,
+      "publish": "2027-01-18T12:00:00+08:00",
+      "candidates": [
+        [
+          "M-30A"
+        ]
+      ]
+    }
+  ],
+  "receipts": [
+    {
+      "id": "IDX-1",
+      "batch": "K-1",
+      "phase": "staged",
+      "versions": [
+        "M-10A",
+        "M-20A"
+      ],
+      "grant_ids": [],
+      "happened": "2027-01-18T10:54:00+08:00",
+      "arrived": "2027-01-18T10:54:00+08:00"
+    },
+    {
+      "id": "IDX-2",
+      "batch": "K-1",
+      "phase": "visible",
+      "versions": [
+        "M-10A",
+        "M-20A"
+      ],
+      "grant_ids": [
+        "INDEX-7",
+        "INDEX-8"
+      ],
+      "happened": "2027-01-18T11:05:00+08:00",
+      "arrived": "2027-01-18T11:12:00+08:00"
+    },
+    {
+      "id": "IDX-3",
+      "batch": "K-2",
+      "phase": "withdrawn",
+      "versions": [
+        "M-10B",
+        "M-20B"
+      ],
+      "grant_ids": [],
+      "happened": "2027-01-18T11:08:00+08:00",
+      "arrived": "2027-01-18T11:18:00+08:00"
+    }
+  ]
+}
